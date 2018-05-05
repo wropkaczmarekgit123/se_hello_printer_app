@@ -9,7 +9,10 @@ script:
   - make test
   - make lint
   - make docker_build
+  - make docker_run
+  - python test-api/test_api.py
   - make docker_push
+  
 deploy:
   provider: heroku
   app: protected-anchorage-85548

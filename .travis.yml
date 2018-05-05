@@ -10,7 +10,7 @@ script:
   - make lint
   - make docker_build
   - make docker_run
-  - sleep 2; python test-api/test_api.py
+  - sleep 2; python test-api/check_api.py
 after_success:
   - make docker_push
 

@@ -2,4 +2,4 @@ mock
 pytest
 flake8
 requests
-jmpespath
+jmespath
